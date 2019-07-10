@@ -1,0 +1,70 @@
+#userArt{
+    
+    height: 90%;
+    width: 30%;
+    grid-column: 1;
+    grid-row: 2;
+    float: left;    
+}
+
+ #computerArt{
+     
+    height: 90%;
+    width: 30%;
+    grid-column: 1;
+    grid-row: 2;
+    float: right;
+}
+
+#diagram{
+    height: 75%;
+    width: 75%;
+    grid-column: auto;
+    grid-row: 5;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#logofb{
+    height: 60%;
+    width: 60%;
+    grid-column: auto;
+    grid-row: 2;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 425px){
+    #userArt{
+        margin-top: 50px;
+        height: 200px;
+        width: 105px;
+        grid-column: 1;
+        grid-row: 2;
+        float: left; 
+        padding-left: 0px;   
+    }
+    
+     #computerArt{
+        margin-top: 50px;
+        height: 200px;
+        width: 105px;
+        grid-column: 1;
+        grid-row: 2;
+        float: right;
+        padding-right: 0px;
+    }
+    #diagram{
+        height: 300px;
+        width: 300px;
+        grid-column: auto;
+        grid-row: 5;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+}
+

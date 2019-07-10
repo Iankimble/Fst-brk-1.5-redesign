@@ -1,0 +1,283 @@
+body{
+    background-size: 100%;
+    margin: 0%;
+    padding: 0;
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto auto auto auto auto auto;
+    text-align: center;
+}
+/******************** Nav bar, logo, start button and main game container*/
+.nav{
+    background-color: blue;
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+.logo{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    height:75px;
+}
+
+.start_container{
+    background-color: green;
+    align-content: space-around;
+}
+
+#landingImg{
+    height: 320px;
+    width: 85%;
+    margin: 25px;
+}
+
+.main_game_container{
+    background-color: gold;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/******************** User and computer character selection cards*/
+#charContainer{
+    background-color: hotpink;
+    margin: 5px;
+}
+
+.cardClass{
+    background-color: lightblue;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    display: inline-block;
+    align-content: space-around;
+}
+
+.charButton{
+    color:white;
+    background-color: blue;
+    border: none;
+    width: 100%;
+    height: 60px;
+    font-size: 20px; 
+    outline: none;
+}
+
+.charImg{
+    margin: 5px;
+    height: 180px;
+    width: 150px;
+}
+/******************** Court Selection card*/
+
+.courtClass{
+    /*background-color: peru;*/
+    margin:15px;
+    display: inline-block;
+    height: 250px;
+    width: 450px;
+    align-content: space-around;
+}
+
+.courtSub{
+    /*background-color: palevioletred;*/
+    height: 50px;
+}
+
+.courtImg{
+    height: 200px;
+    width: 450px;
+    margin: 0;
+}
+
+.courtButton{
+    margin: 0px;
+    border: none;
+    background: blue;
+    width: 450px;
+    height: 50px;
+    outline: none;
+    /*color: white;*/
+    font-size: 20px;
+}
+
+.displayContainer{
+    width: 100%;
+    height: 100px;
+    /*background-color: gold;*/
+}
+
+.displayCourtImg{
+    width: 80%;
+    height: 350px;
+    grid-column: 1;
+    grid-row: 3px;
+}
+
+.displaySub{
+    background-color: blueviolet;
+    height: 20px;
+}
+
+.userDisplayImg{
+    height: 220px;
+    width: 220px;
+    float: left;
+    position: relative;
+    margin-left: 250px;
+}
+
+.compDisplayImg{
+    height: 220px;
+    width: 220px;
+    float:right;
+    position: relative;
+    margin-right: 250px;
+}
+
+#gameInfoContainer{
+/*background-color: wheat;*/
+height: 20px;
+}
+
+#userStatus{
+background-color: red;
+display: inline-block;
+float: left;
+margin-left: 200px;
+position: relative;
+align-content: space-around;
+    height: 30px;
+font-size: 30px;
+}
+
+#compStatus{
+background-color: blue;
+display: inline-block;
+float: right;
+margin-right: 200px;
+position: relative;
+align-content: space-around;
+height: 30px;
+font-size: 30px;
+}
+
+#buttonSpace{
+    grid-column: 1;
+    grid-row: 4;
+    height: 10px;
+}
+
+#gameButtonContainer{
+    grid-column: 1;
+    grid-row: 5;
+    margin-top: 50px;
+    /*background-color: tomato;*/
+}
+
+
+#moveContainer{
+    /*background-color: yellow;*/
+    align-content: space-around;
+    position: relative;
+    height: 20px;
+}
+
+#user_move{
+float: left;
+margin-left: 200px;
+}
+
+#computer_move{
+float: right;
+margin-right: 200px;
+}
+
+#imgBg{
+/*background-color: violet;*/
+grid-column: 1;
+grid-row: 2;
+}
+
+/*Game buttons*/
+
+#shootId{
+    background-color:blue;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    align-content: space-around;
+    color: white;
+    border-radius: 25px;
+    border: 5px;
+}
+
+#passId{
+    background-color:blue;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    align-content: space-around;
+    color: white;
+    border-radius: 25px;
+    border: 5px;
+}
+
+#crossoverId{
+    background-color:blue;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    align-content: space-around;
+    color: white;
+    border-radius: 25px;
+    border: 5px;
+}
+
+#blockId{
+    background-color: red;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    align-content: space-around;
+    color: white;
+    border-radius: 25px;
+    border: 5px;
+}
+
+#lockdownId{
+    background-color: red;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    align-content: space-around;
+    color: white;
+    border-radius: 25px;
+    border: 5px;
+}
+
+#stealId{
+    background-color:red;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    align-content: space-around;
+    color: white;
+    border-radius: 25px;
+    border: 5px;
+}
+
+#instructions{
+    grid-column: 1;
+    grid-row: 6;
+    /*background-color: green;*/
+}
