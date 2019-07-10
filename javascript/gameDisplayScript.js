@@ -8,6 +8,9 @@ const display = () => {
     let bgSub = document.createElement("div");
     let bgName = document.createTextNode(court);
     let bgCourtImg = document.createElement("img");
+    
+    let outcome = document.createElement("div");
+    outcome.setAttribute("id", "outcome");
 
     bgCourtImg.setAttribute("src", "bg.jpg");
     bgCourtImg.setAttribute("class", "displayCourtImg");
@@ -19,6 +22,8 @@ const display = () => {
     bgDisplay.appendChild(bgSub);
     bgDisplay.appendChild(bgSub);
     bgSub.appendChild(bgName);
+
+  document.getElementById("gameInfoContainer").appendChild(outcome);
 
     document.getElementById("imgBg").append(bgDisplay);
     bgDisplay.setAttribute("class", "displayContainer");

@@ -63,7 +63,7 @@ const stopGameforUser = () => {
         $("#comp_move").hide();
         $("#match_response").hide();
         $("#gameOver").text("Congratulations! You win!");
-        $("#moveContainer").hide();
+        $("#moveContainer").hide(); 
 
         let newGameButton = document.createElement("button");
         var text = document.createTextNode("Play again");
@@ -159,6 +159,9 @@ const defensive_buttons = () => {
     stealButton.setAttribute("id", "stealId");
 };
 
+$("#userStatus").hide();
+$("#compStatus").hide();
+
 /************************************************************************************************************* */
 // Actual Game Logic
 
@@ -224,7 +227,8 @@ const logic = () => {
 
         if (compMove == defVal[0]) {
             console.log("lose")
-            $("#match_response").text("Lose: Your shot was blocked. It happens to the best of us.")
+            $("#outome").text("Lose");
+            $("#match_response").text("Your shot was blocked. It happens to the best of us.")
             $("#user_move").text("Shoot")
             $("#computer_move").text(compMove)
             toggleswitch();
@@ -232,14 +236,16 @@ const logic = () => {
         }
         else if (compMove == defVal[2]) {
             console.log("win")
-            $("#match_response").text("Win: Your opponent attempted to steal but you shot it right in there face")
+            $("#outcome").text("Win");
+            $("#match_response").text("Your opponent attempted to steal but you shot it right in there face")
             $("#user_move").text("Shoot")
             $("#computer_move").text(compMove)
             userScoreboard();
         }
         else {
             console.log("draw")
-            $("#match_response").text("Draw: Your opponent put the locks down. This might be tough.")
+            $("#outcome").text("Draw");
+            $("#match_response").text("Your opponent put the locks down. This might be tough.")
             $("#user_move").text("Shoot")
             $("#computer_move").text(compMove)
         }
@@ -256,7 +262,8 @@ const logic = () => {
 
         if (compMove == defVal[0]) {
             console.log("win")
-            $("#match_response").text("Win: Your opponent bit on the crossover. Good move!")
+            $("#outcome").text("Win");
+            $("#match_response").text("Your opponent bit on the crossover. Good move!")
             $("#user_move").text("Crossover")
             $("#computer_move").text(compMove)
             userScoreboard()
@@ -264,7 +271,8 @@ const logic = () => {
         }
         else {
             console.log("lose")
-            $("#match_response").text("Lose: Your opponent saw the crossover coming. Try again.")
+            $("#outcome").text("Lose")
+            $("#match_response").text("Your opponent saw the crossover coming. Try again.")
             $("#user_move").text("Crossover")
             $("#computer_move").text(compMove)
             toggleswitch();
@@ -283,13 +291,15 @@ const logic = () => {
 
         if (compMove == defVal[0]) {
             console.log("win")
-            $("#match_response").text("Win: You got the ball to the open man. Good court vision.")
+            $("#outcome").text("Win")
+            $("#match_response").text("You got the ball to the open man. Good court vision.")
             $("#user_move").text("Pass")
             $("#computer_move").text(compMove)
             userScoreboard();
         }
         else if (compMove == defVal[2]) {
             console.log("lose")
+            $("#outcome").text("Lose");
             $("#match_response").text("Lose: Your opponent read the play and stole the ball. Keep going.")
             $("#user_move").text("Pass")
             $("#computer_move").text(compMove)
@@ -298,6 +308,7 @@ const logic = () => {
         }
         else {
             console.log("draw");
+            $("#outcome").text("Draw");
             $("#match_response").text("Draw: Your opponent is locked in. It won't be that easy.")
             $("#user_move").text("Pass")
             $("#computer_move").text(compMove)
@@ -319,6 +330,7 @@ const logic = () => {
 
         if (compMove == offVal[0]) {
             console.log("win");
+            $("#outcome").text("Win");
             $("#match_response").text("Win: You beat that shot up! Let them know you're not the one.")
             $("#user_move").text("Block")
             $("#computer_move").text(compMove)
@@ -327,6 +339,7 @@ const logic = () => {
         }
         else {
             console.log("lose");
+            $("#outcome").text("Lose");
             $("#match_response").text("Lose: Your opponent is just too fast. Keep up!")
             $("#user_move").text("Block")
             $("#computer_move").text(compMove)
@@ -348,7 +361,8 @@ const logic = () => {
 
         if (compMove == offVal[0]) {
             console.log("draw");
-            $("#match_response").text("Draw: Good defense. Now to convert!")
+            $("#outcome").text("Draw");
+            $("#match_response").text("Good defense. Now to convert!")
             $("#user_move").text("Lockdown")
             $("#computer_move").text(compMove)
 
@@ -356,14 +370,16 @@ const logic = () => {
         else if (compMove == offVal[1]) {
             toggleswitch();
             console.log("win");
-            $("#match_response").text("Win: Your defense is just too good for their tired moves.")
+            $("#outcome").text("Win");
+            $("#match_response").text("Your defense is just too good for their tired moves.")
             userScoreboard();
             $("#user_move").text("Lockdown")
             $("#computer_move").text(compMove)
         }
         else {
             console.log("draw")
-            $("#match_response").text("Draw: Good defense. Lets go!")
+            $("#outcome").text("Draw");
+            $("#match_response").text("Good defense. Lets go!")
             $("#user_move").text("Lockdown")
             $("#computer_move").text(compMove)
         }
@@ -382,14 +398,16 @@ const logic = () => {
 
         if (compMove == offVal[0]) {
             console.log("lose");
-            $("#match_response").text("Lose: You made the wrong read. No worries, keep going!")
+            $("#outcome").text("Lose");
+            $("#match_response").text("You made the wrong read. No worries, keep going!")
             $("#user_move").text("Steal")
             $("#computer_move").text(compMove)
             computeScoreboard();
         }
         else {
             console.log("win")
-            $("#match_response").text("Win: Good eye. Even better defense!")
+            $("#outcome").text("Win");
+            $("#match_response").text("Good eye. Even better defense!")
             $("#user_move").text("Steal")
             $("#computer_move").text(compMove)
             toggleswitch();

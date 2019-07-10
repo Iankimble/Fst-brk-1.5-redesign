@@ -6,6 +6,7 @@ body{
     grid-template-columns: 1;
     grid-template-rows: auto auto auto auto auto auto;
     text-align: center;
+    font-family: 'Russo One', sans-serif;
 }
 /******************** Nav bar, logo, start button and main game container*/
 .nav{
@@ -14,6 +15,10 @@ body{
     grid-row: 1;
 
 }
+
+/*.start_container{
+    background-color: blue;
+}*/
 
 .logo{
     font-size: 20px;
@@ -24,52 +29,61 @@ body{
     height:75px;
 }
 
-.start_container{
-    background-color: green;
+
+#landingImg{
+    height: 425px;
+    width: 85%;
+    margin: 25px;
     align-content: space-around;
 }
 
-#landingImg{
-    height: 320px;
-    width: 85%;
-    margin: 25px;
-}
-
 .main_game_container{
-    background-color: gold;
     grid-column: 1;
     grid-row: 2;
 }
 
-/******************** User and computer character selection cards*/
-#charContainer{
-    background-color: hotpink;
-    margin: 5px;
+#Play{
+    background-color: orange;
+    border: none;
+    height: 50px;
+    width: 200px;
+    color: white;
+    border-radius: 25px;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
 }
+
+/******************** User and computer character selection cards*/
 
 .cardClass{
     background-color: lightblue;
-    height: 250px;
+    height: 325px;
     width: 250px;
     margin: 15px;
     display: inline-block;
     align-content: space-around;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 25px;
 }
 
 .charButton{
     color:white;
     background-color: blue;
     border: none;
-    width: 100%;
-    height: 60px;
+    width: 98%;
+    height: 63px;
     font-size: 20px; 
     outline: none;
+    border-radius: 20px;
+    font-family: 'Squada One', cursive;
 }
 
 .charImg{
     margin: 5px;
-    height: 180px;
-    width: 150px;
+    height: 245px;
+    width: 155px;
 }
 /******************** Court Selection card*/
 
@@ -100,8 +114,10 @@ body{
     width: 450px;
     height: 50px;
     outline: none;
-    /*color: white;*/
-    font-size: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 25px;
+    font-family: 'Squada One', cursive;
 }
 
 .displayContainer{
@@ -118,7 +134,7 @@ body{
 }
 
 .displaySub{
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
     height: 20px;
 }
 
@@ -139,23 +155,31 @@ body{
 }
 
 #gameInfoContainer{
-/*background-color: wheat;*/
 height: 20px;
+margin: 5px;
+align-content: space-around;
 }
 
 #userStatus{
-background-color: red;
+background-color: black;
+border-style: solid;
 display: inline-block;
 float: left;
 margin-left: 200px;
 position: relative;
 align-content: space-around;
-    height: 30px;
+height: 30px;
 font-size: 30px;
+color: greenyellow;
+font-family: 'Press Start 2P', cursive;
+border-style: solid;
+border-width: 3px;
+border-color: orange;
 }
 
 #compStatus{
-background-color: blue;
+background-color: black;
+border-style: solid;
 display: inline-block;
 float: right;
 margin-right: 200px;
@@ -163,6 +187,11 @@ position: relative;
 align-content: space-around;
 height: 30px;
 font-size: 30px;
+color: greenyellow;
+font-family: 'Press Start 2P', cursive;
+border-style: solid;
+border-width: 3px;
+border-color: orange;
 }
 
 #buttonSpace{
@@ -214,6 +243,8 @@ grid-row: 2;
     color: white;
     border-radius: 25px;
     border: 5px;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
 }
 
 #passId{
@@ -226,6 +257,8 @@ grid-row: 2;
     color: white;
     border-radius: 25px;
     border: 5px;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
 }
 
 #crossoverId{
@@ -238,6 +271,8 @@ grid-row: 2;
     color: white;
     border-radius: 25px;
     border: 5px;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
 }
 
 #blockId{
@@ -250,6 +285,8 @@ grid-row: 2;
     color: white;
     border-radius: 25px;
     border: 5px;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
 }
 
 #lockdownId{
@@ -262,6 +299,8 @@ grid-row: 2;
     color: white;
     border-radius: 25px;
     border: 5px;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
 }
 
 #stealId{
@@ -274,10 +313,30 @@ grid-row: 2;
     color: white;
     border-radius: 25px;
     border: 5px;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
+}
+
+#outcome{
+    font-size: 45px;
+    color: green;
+    text-align: center;
+    align-content: space-around;
+    margin: 5px;
+}
+
+#newGame{
+    background-color: orange;
+    border: none;
+    height: 50px;
+    width: 200px;
+    color: white;
+    border-radius: 25px;
+    font-family: 'Squada One', cursive;
+    font-size: 30px;
 }
 
 #instructions{
     grid-column: 1;
     grid-row: 6;
-    /*background-color: green;*/
 }

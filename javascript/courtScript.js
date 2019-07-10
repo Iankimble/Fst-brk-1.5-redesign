@@ -51,12 +51,16 @@ const courtSlct = () => {
         console.log(`playing on ${court}`);
   
         displayScreen();
+        $("#userStatus").toggle();
+        $("#compStatus").toggle();
     });
 
     $("#dayCourtId").click(()=>{
         court = courts[0];
     
         displayScreen();
+        $("#userStatus").toggle();
+        $("#compStatus").toggle();
     });
 
     // Night Court
@@ -89,6 +93,8 @@ const courtSlct = () => {
         console.log(`playing on ${court}`);
 
         displayScreen();
+        $("#userStatus").toggle();
+        $("#compStatus").toggle();
 
     });
 
@@ -96,6 +102,8 @@ const courtSlct = () => {
         court = courts[1];
     
         displayScreen();
+        $("#userStatus").toggle();
+        $("#compStatus").toggle();
     });
 
 };
