@@ -1,5 +1,5 @@
 // Start game
-let characters = ["A", "B", "C", "D"];
+let characters = ["Archie", "Zia", "Chevy", "Spooky"];
 let userChar = "";
 
 $("#Play").click(() => {
@@ -29,7 +29,7 @@ const userCharSlct = () => {
     let aCharImg = document.createElement("img");
     let aSelect = document.createElement("button");
 
-    aCharImg.setAttribute("src", "testImg.jpg");
+    aCharImg.setAttribute("src", "archieSelect.png");
     aCharImg.setAttribute("class", "charImg");
     aCharImg.setAttribute("id","clickA");
     aCharImg.setAttribute("alt", "A");
@@ -66,7 +66,7 @@ const userCharSlct = () => {
     let bCharImg = document.createElement("img");
     let bSelect = document.createElement("button");
 
-    bCharImg.setAttribute("src", "testImg.jpg");
+    bCharImg.setAttribute("src", "ziaSelect.png");
     bCharImg.setAttribute("class", "charImg");
     bCharImg.setAttribute("id","clickB");
     bCharImg.setAttribute("alt", "B");
@@ -102,7 +102,7 @@ const userCharSlct = () => {
     let cCharImg = document.createElement("img");
     let cSelect = document.createElement("button");
 
-    cCharImg.setAttribute("src", "testImg.jpg");
+    cCharImg.setAttribute("src", "chevySelect.png");
     cCharImg.setAttribute("class", "charImg");
     cCharImg.setAttribute("id","clickC");
     cCharImg.setAttribute("alt", "C");
@@ -138,7 +138,7 @@ const userCharSlct = () => {
     let dCharImg = document.createElement("img");
     let dSelect = document.createElement("button");
 
-    dCharImg.setAttribute("src", "testImg.jpg");
+    dCharImg.setAttribute("src", "spookySelect.png");
     dCharImg.setAttribute("class", "charImg");
     dCharImg.setAttribute("id","clickD");
     dCharImg.setAttribute("alt", "D");

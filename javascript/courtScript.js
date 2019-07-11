@@ -28,7 +28,7 @@ const courtSlct = () => {
     let dayCourtImg = document.createElement("img");
     let dayCourtSelect = document.createElement("button");
 
-    dayCourtImg.setAttribute("src", "bg.jpg");
+    dayCourtImg.setAttribute("src", "bgday.png");
     dayCourtImg.setAttribute("class", "courtImg");
     dayCourtImg.setAttribute("id","dayCourtId");
     dayCourtImg.setAttribute("alt", "day court");
@@ -70,7 +70,7 @@ const courtSlct = () => {
     let niteCourtImg = document.createElement("img");
     let niteCourtSelect = document.createElement("button");
 
-    niteCourtImg.setAttribute("src", "bg.jpg");
+    niteCourtImg.setAttribute("src", "bgnite.png");
     niteCourtImg.setAttribute("class", "courtImg");
     niteCourtImg.setAttribute("id","niteCourtId");
     niteCourtImg.setAttribute("alt", "night court");

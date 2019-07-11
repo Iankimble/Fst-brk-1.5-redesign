@@ -28,7 +28,7 @@ const oppCharSlct = () => {
     let aCharImg = document.createElement("img");
     let aSelect = document.createElement("button");
 
-    aCharImg.setAttribute("src", "demoImg.png");
+    aCharImg.setAttribute("src", "archieSelect.png");
     aCharImg.setAttribute("class", "charImg");
     aCharImg.setAttribute("id","clickA2");
     aCharImg.setAttribute("alt", "A");
@@ -64,7 +64,7 @@ const oppCharSlct = () => {
     let bCharImg = document.createElement("img");
     let bSelect = document.createElement("button");
 
-    bCharImg.setAttribute("src", "demoImg.png");
+    bCharImg.setAttribute("src", "ziaSelect.png");
     bCharImg.setAttribute("class", "charImg");
     bCharImg.setAttribute("id","clickB2");
     bCharImg.setAttribute("alt", "B");
@@ -100,7 +100,7 @@ const oppCharSlct = () => {
     let cCharImg = document.createElement("img");
     let cSelect = document.createElement("button");
 
-    cCharImg.setAttribute("src", "demoImg.png");
+    cCharImg.setAttribute("src", "chevySelect.png");
     cCharImg.setAttribute("class", "charImg");
     cCharImg.setAttribute("id","clickC2");
     cCharImg.setAttribute("alt", "C");
@@ -136,7 +136,7 @@ const oppCharSlct = () => {
     let dCharImg = document.createElement("img");
     let dSelect = document.createElement("button");
 
-    dCharImg.setAttribute("src", "demoImg.png");
+    dCharImg.setAttribute("src", "spookySelect.png");
     dCharImg.setAttribute("class", "charImg");
     dCharImg.setAttribute("id","clickD2");
     dCharImg.setAttribute("alt", "D");
